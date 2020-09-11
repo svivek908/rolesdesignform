@@ -56,6 +56,7 @@ export default function EmployeeForm() {
         e.preventDefault()
         if (validate()){
             employeeService.insertEmployee(values)
+            console.log('yes you did it', values);
             resetForm()
         }
     }

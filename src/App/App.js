@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import PageHeader from '../components/PageHeader';
 
 import Employees from "../pages/Employees/Employees";
+import Roles from '../pages/Employees/Roles';
 
 const theme = createMuiTheme({
   palette: {
@@ -51,8 +52,8 @@ function App() {
       <SideMenu />
       <div className={classes.appMain}>
         <Header />
-        
-        <Employees />
+        <Roles/>
+        {/* <Employees /> */}
       </div>
       <CssBaseline />
     </ThemeProvider>
